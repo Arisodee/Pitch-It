@@ -11,9 +11,12 @@ A Flask application that allows users to post one-minute pitches, comment on oth
 
 ## User Stories
 
-1. A user should see various news sources on the homepage of the application.
-2. A user should be able to select a news source and see all news articles from the selected news source in the application.
-4. A user should be able to click on an article and read the full article on the source website.
+1. See pitches posted by other people, comment and leave feedback.
+2. Vote on a pitch; give it a downvote or upvote.
+3. Sign in and get a welcoming email and be able to leave a comment
+4. Submit a pitch in any category
+5. View pitches from the different categories.
+
 
 ## Setup Installation
 * Clone the repository
