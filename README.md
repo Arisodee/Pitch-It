@@ -1,4 +1,4 @@
-### Pitch-It
+# Pitch-It
 
 ## Author
 
