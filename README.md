@@ -6,7 +6,7 @@ Ariso Okanga
 
 ## Description
 
-A Flask application that allows users to post one-minute pitches, comment on other pitches and to upvote and downvote pitches.
+This Flask application allows users to post one-minute pitches, comment on other pitches and to upvote and downvote pitches.
 
 
 ## User Stories
@@ -36,6 +36,8 @@ A Flask application that allows users to post one-minute pitches, comment on oth
 
 * Python3.6
 * Flask
+* Html
+* Bootstrap
 
 ## Support and contact details
 For any questions and inquiries, contact me via email:
