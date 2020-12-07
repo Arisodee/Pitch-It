@@ -4,6 +4,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 from . import login_manager
 
+@login_manager.user_loader
+def load_user(user):
+    return User.get(user)
+
 class User(UserMixin,db.Model):
 
     __tablename__ = 'users' 
