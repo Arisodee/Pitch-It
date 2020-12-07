@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{%block content%}
+<div class="container text-center bg "
+    style="background-color: rgb(125, 211, 245); padding: 100px 25px; font-family: 'Dancing Script', cursive;">
+    <h1>Interview Pitches</h1>
+</div>
+<div class="container bg">
+    <hr>
+    <div class="row">
+        {{macro.displayPitches(pitches)}}
+    </div>
+</div>
+{%endblock%}

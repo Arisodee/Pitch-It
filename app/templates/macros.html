@@ -1,30 +1,21 @@
-{% macro displaySourceList(source_list) %}
+{% macro displayPitches(pitches_list)%} 
+{%for pitch in pitches_list%}
 
-<!-- {% for source_row in source_list |batch(3)%}
-<div class="row">
-
-    {% for sources in source_row %}
-
-    <div class="col-md-6">
-
-        <div class="card">
-            <div class="card-title" style="font-size: 28px;">
-                <a href="{{sources.url}}">
-                    {{ sources.name}}
-                </a>
-            </div>
-            <div class="card-body">
-                <p style="font-size: 18px;">
-                    {{ sources.description |truncate(150)}}
-
-                </p>
-                <a href="{{sources.url}}" class="btn btn-primary text-center" target="_blank">Check out
-                    {{sources.name}}</a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
+<div class="well well-lg">
+    <h4>{{pitch.pitch_title}}</h4>
+    <p>{{pitch.pitch_content| truncate(150)}}</p>
+    <p>Written by: {{pitch.user.username}} <a href="/pitch/{{pitch.id}}" class="btn btn-primary">Read</a>
+    </p>
 </div>
-{% endfor %} -->
+</div>
 
-{% endmacro %
+{%endfor%} 
+{%endmacro%} 
+{%macro displayComments(comments_list)%} 
+{%for comment in comments_list%}
+
+<h5>{{comment.user.username}}</h5>
+<p>{{comment.comment}}</p>
+
+{%endfor%}
+{%endmacro%}
