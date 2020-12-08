@@ -1,45 +1,43 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
-
 {%block content%}
 
 <body>
     <div class="container bg">
         <div class=" heading">
-            <h1>Welcome to Pitch-It</h1>
+            <h1 style= "font-size:40px; color:blue">Welcome to Pitch-It</h1>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="well well-lg"></div>
-                    <h3>Interview Pitches</h3>
+                <div class="well well-lg">
+                    <h3 style = "font-size:30px; color:blue;">Interview Pitches</h3>
                     <hr>
                     <p>We are always seeking to make great first impressions at interviews. </p>
-                    <a href="{{url_for('main.interview_pitches')}}" class="btn btn-info btn-primary">See more</a>
+                    <a style= "font-size:18px; font-family: cursive;" href="{{url_for('main.interview_pitches')}}" class="btn btn-info btn-primary">View pitches</a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="well well-lg">
-                    <h3>Product Pitches</h3>
+                    <h3 style = "font-size: 30px; color:blue;">Promotion Pitches</h3>
+                    <hr>
+                    <p>Make them precise, engaging and detailed.</p>
+                    <a style= "font-size:18px; font-family: cursive;" href="{{url_for('main.promotion_pitches')}}" class="btn btn-info btn-primary">View pitches</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well well-lg">
+                    <h3 style = "font-size: 30px; color:blue;">Product Pitches</h3>
                     <hr>
                     <p>Product pitches need to be precise and captivating. </p>
-                    <a href="{{url_for('main.product_pitches')}}" class="btn btn-info btn-primary">See more</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="well well-lg">
-                    <h3>Promotion Pitches</h3>
-                    <hr>
-                    <p>Sales pitches have to be precise, engaging and detailed.</p>
-                    <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-info btn-primary">See more</a>
+                    <a  style= "font-size:18px; font-family: cursive;" href="{{url_for('main.product_pitches')}}" class="btn btn-info btn-primary">View pitches</a>
                 </div>
             </div>
         </div>
         </div>
-        <div style="padding-bottom: 20px;">
-            <a href="{{url_for('main.new_pitch')}}" class="btn btn-info btn-center">Click to create a pitch</a>
+        <div style="padding-bottom: 20px; margin-left: 500px; font-size: 30px; font-family:cursive">
+            <a style = "font-size: 30px; font-family:cursive" href="{{url_for('main.new_pitch')}}" class="btn btn-info btn-center">Click to create a new pitch</a>
         </div>
     </div>
 </body>
-
 {%endblock%}
