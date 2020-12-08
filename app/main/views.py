@@ -5,6 +5,7 @@ from .. import db,photos
 from flask_login import login_required,current_user
 import datetime
 from .forms import UpdateProfile, PitchForm, CommentForm
+import markdown2
 
 #views
 @main.route('/')
