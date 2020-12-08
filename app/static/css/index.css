@@ -1,12 +1,15 @@
 .bg{
     font-family: 'Dancing Script', cursive;
     text-align: center;
+    font-size: 32px;
 }
 
 .heading{
-    font-size: 50px;
+    font-size: 30px;
     padding: 50px 25px;
-    color:white;
+    color:rgb(38, 17, 131);
 }
-
+body{
+    font-size:40px;
+}
 
