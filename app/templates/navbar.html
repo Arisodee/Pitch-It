@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse" style="background-color: blue;" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" style="font-size: 24px;">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -7,28 +7,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"> Pitch-It </a>
+            <a style = "font-size:30px"class="navbar-brand" href="/"> Pitch-It </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-            </ul>
-            <!-- <ul class="nav navbar-nav navbar-right">
-                {% if current_user.is_authenticated %}
-                <li style="color:white;padding:15px;">{{current_user.username}}</li>
-                <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
-                {% else %}
-                <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
-                {%endif%}
+                <li><a href="{{url_for( 'main.interview_pitches')}} " >Interview</a></li>
+                <li><a href="{{url_for( 'main.promotion_pitches')}} ">Promotion</a></li>
+                <li><a href="{{url_for( 'main.new_pitch')}} ">New pitch</a></li>
+                <li><a href="{{url_for( 'main.product_pitches')}} ">Product</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
                 <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
+                <li><a href="{{url_for('main.user_pitches',uname=current_user.username)}}">My Pitches</a></li>
                 <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                 {% else %}
-                <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+                <li><a style = "font-size: 20px;"href="{{url_for('auth.login')}}">Sign in</a></li>
                 {%endif%}
-                </ul>
-        </div>
-    </div> -->
-</div>
+            </ul>
+        </nav>
