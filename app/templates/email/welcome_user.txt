@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to Pitch_It
+We have just seen you have signed up for our application. Welcome to the family. Write catchy pitches and enjoy reading other pitches.
