@@ -1,15 +1,15 @@
 {% extends 'base.html' %} 
 {% import 'macros.html' as macro %}
 {%block content%}
-<div class="text-center">
-    <h1>Promotion Pitches</h1>
+<div class="container text-center bg"
+    style="background-color: rgb(125, 211, 245); font-weight: bold; padding: 100px 25px; font-family: 'Dancing Script', cursive;">
+    <h1 style = "font-size: 38px;">Promotion Pitches</h1>
 </div>
-<div class="container">
+<div class="container bg">
     <hr>
-    <div class="row" style="margin-top: 300px;">
+    <div class="row">
         {{macro.displayPitches(pitches)}}
     </div>
 </div>
-
 
 {%endblock%}
